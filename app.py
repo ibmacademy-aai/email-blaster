@@ -43,24 +43,27 @@ with open('example.csv', mode='r') as file:
         
         # HTML message dengan table email institusi dan password spesifik per murid
         html_message = f"""
-       <!DOCTYPE html>
+      <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selamat Datang di Infinite Learning!</title>
 </head>
+
 <body>
     <div style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <img style="border: 2px solid purple; border-radius: 7px; height: 320px; width: 320px;"
-                src="https://raw.githubusercontent.com/ibmacademy-aai/email-blaster/main/IL.jpg" alt="">
-        </div>
-        <br>
+
         <div
             style="width: 80%; border: 2px solid purple; padding: 1em; margin: 1em 0.5em 1em 0.5em; border-radius: 7px;">
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <img style="height: 80px;"
+                    src="https://raw.githubusercontent.com/ibmacademy-aai/email-blaster/master/logo.png" alt="">
+            </div>
             <span>
-                <h2 style="text-align: center;">Selamat datang di Program Advanced Artificial Intelligence, {name}!🤩🔥</h2>
+                <h2 style="text-align: center;">Selamat datang di Program Advanced Artificial Intelligence, {name}!🤩🔥
+                </h2>
                 <br>
                 Hi {name}!
                 <br>
@@ -70,17 +73,27 @@ with open('example.csv', mode='r') as file:
             </span>
             <table style="border: 1px solid black; border-collapse: collapse; margin: 12px 0px 12px 0px;">
                 <tr>
-                    <th style="font-size: 12px; font-weight: bolder; border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">E-mail Infinite Learning</th>
-                    <td style="font-size: 12px; font-weight: bolder; border: 1px solid black; padding: 8px; text-align: left;">{email_il}</td>
+                    <th
+                        style="font-size: 12px; font-weight: bolder; border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">
+                        E-mail Infinite Learning</th>
+                    <td
+                        style="font-size: 12px; font-weight: bolder; border: 1px solid black; padding: 8px; text-align: left;">
+                        {email_il}</td>
                 </tr>
                 <tr>
-                    <th style="font-size: 12px; font-weight: bolder; border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">Password</th>
-                    <td style="font-size: 12px; font-weight: bolder; border: 1px solid black; padding: 8px; text-align: left;">{password_il}</td>
+                    <th
+                        style="font-size: 12px; font-weight: bolder; border: 1px solid black; padding: 8px; text-align: left; background-color: #f2f2f2;">
+                        Password</th>
+                    <td
+                        style="font-size: 12px; font-weight: bolder; border: 1px solid black; padding: 8px; text-align: left;">
+                        {password_il}</td>
                 </tr>
-            </table>            
+            </table>
             <div>
                 <div style="background-color: aquamarine; padding: 7px; text-align: center; border-radius: 7px;">
-                    Email ini akan dipakai untuk <strong>akun LMS Infinite Learning dan IBM Cloud</strong>, jangan digunakan untuk mendaftar di IBM SkillsBuild, Cognitive Class AI dan lain-lain, silakan gunakan akun pribadi untuk platform selain LMS dan IBM Cloud!
+                    Email ini akan dipakai untuk <strong>akun LMS Infinite Learning dan IBM Cloud</strong>, jangan
+                    digunakan untuk mendaftar di IBM SkillsBuild, Cognitive Class AI dan lain-lain, silakan gunakan akun
+                    pribadi untuk platform selain LMS dan IBM Cloud!
                 </div>
                 <br>
                 Silahkan kamu ikuti panduan Link Notion di bawah ini: <br>
@@ -88,7 +101,9 @@ with open('example.csv', mode='r') as file:
                     target="_blank">https://fortune-chard-9e3.notion.site/Akun-Email-Infinite-Learning-13375758b26149268b4c70f49037233a?pvs=4</a>
                 <br>
                 <br>
-                Harap segera login di <a href="https://webmail.infinitelearningstudent.id">https://webmail.infinitelearningstudent.id</a> menggunakan detail ini dan <strong>ubah kata sandi anda</strong> untuk keamanan yang lebih baik.
+                Harap segera login di <a
+                    href="https://webmail.infinitelearningstudent.id">https://webmail.infinitelearningstudent.id</a>
+                menggunakan detail ini dan <strong>ubah kata sandi anda</strong> untuk keamanan yang lebih baik.
                 <br>
                 Jika Anda memiliki pertanyaan atau butuh bantuan, jangan ragu untuk menghubungi mentornya ya!
                 <br>
@@ -107,6 +122,7 @@ with open('example.csv', mode='r') as file:
         </div>
     </div>
 </body>
+
 </html>
         """
         
