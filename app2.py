@@ -28,11 +28,11 @@ def kirim_email_html(from_email, password, to_email, subject, html_message):
         print(f"Gagal mengirim email ke {to_email}. Error: {str(e)}")
 
 # Pengaturan akun email pengirim
-email_pengirim = "arifiansaputra43@gmail.com"  # Ganti dengan email pengirim
-password_pengirim = "bvac yogk hwbx oknm"
+email_pengirim = "ibmacademy.aai@gmail.com"  # Ganti dengan email pengirim
+password_pengirim = "tfcx yyfs ioku uiea"
 
 # Membaca CSV yang berisi nama, email, email institusi, dan password
-with open('data_murid1.csv', mode='r') as file:
+with open('one.csv', mode='r') as file:
     csv_reader = csv.DictReader(file)
     
     for row in csv_reader:
