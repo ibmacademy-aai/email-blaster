@@ -29,7 +29,7 @@ def kirim_email_html(from_email, password, to_email, subject, html_message):
 
 # Pengaturan akun email pengirim
 email_pengirim = "ibmacademy.aai@gmail.com"  # Ganti dengan email pengirim
-password_pengirim = "tfcx yyfs ioku uiea"
+password_pengirim = ""
 
 # Membaca CSV yang berisi nama, email, email institusi, dan password
 with open('one.csv', mode='r') as file:
